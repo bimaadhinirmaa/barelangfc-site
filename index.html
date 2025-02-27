@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Navigasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Elemen Loading -->
+    <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <div class="spinner-text">B A R E L A N G  FC</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo bfc.png" alt="Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="home.html" data-lang="home">BERANDA</a></li>
+            <li><a href="news.html" data-lang="news">BERITA</a></li>
+            <li><a href="#team" data-lang="team">TIM</a></li> <!-- Tetap scroll -->
+            <li><a href="robot.html" data-lang="robot">ROBOT</a></li>
+            <li><a href="achievements.html" data-lang="achievements">PENCAPAIAN</a></li>
+            <li><a href="contact.html" data-lang="contact">KONTAK</a></li>
+            <li class="flag">
+                <img id="flag-active" src="assets/indonesia flag.png" alt="ID" width="25" data-lang="id">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="Caaa" class="slide" style="background-image: url('assets/team.jpeg');">
+            <h1 data-lang="welcome">Selamat Datang di Tim Barelang FC</h1>
+            <h2 data-lang="description">Ini adalah tim penelitian robot humanoid</h2>
+        </section>
+
+        <!-- Logo Partner-->
+        <section class="partners">
+            <div class="partners-container">
+                <div class="line-with-circle">
+                    <div class="line left-line"></div>
+                    <div class="circle">
+                      <div class="dot"></div>
+                    </div>
+                    <div class="line right-line"></div>
+                </div>
+              <h2>Our Partners</h2>
+              <div class="logo-marquee">
+                <div class="logos">
+                  <!-- Tambahkan gambar logo -->
+                  <!--<img src="assets/polibatam.png" alt="Polibatam">-->
+                  <!--<img src="assets/brail.png" alt="Brail">-->
+                  <img src="assets/bfc.png" alt="Barelang FC">
+                  <img src="assets/barelang7.jpg" alt="Barelang 7">
+                  <img src="assets/barelang1.png" alt="Barelang 1">
+                  <img src="assets/barelang5.png" alt="Barelang 5">
+                  <img src="assets/barelang63.JPG" alt="Barelang 63">
+                  <img src="assets/barelangmarine.png" alt="Barelang Marine">
+                  <img src="assets/barelangsky.png" alt="Barelang Sky Force">
+
+                  <!-- Duplikasi logo untuk seamless scrolling -->
+                  <!--<img src="assets/polibatam.png" alt="Polibatam">-->
+                  <!--<img src="assets/brail.png" alt="Brail">-->
+                  <img src="assets/bfc.png" alt="Barelang FC">
+                  <img src="assets/barelang7.jpg" alt="Barelang 7">
+                  <img src="assets/barelang1.png" alt="Barelang 1">
+                  <img src="assets/barelang5.png" alt="Barelang 5">
+                  <img src="assets/barelang63.JPG" alt="Barelang 63">
+                  <img src="assets/barelangmarine.png" alt="Barelang Marine">
+                  <img src="assets/barelangsky.png" alt="Barelang Sky Force">
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="Ceee" class="slide-footer">
+            <div class="logo-container">
+                <img src="assets/logo bfc.png" alt="Logo" class="logo">
+                <div class="address">Alamat : Jl. Ahmad Yani Batam Kota. Kota Batam. Kepulauan Riau. Indonesia</div>
+            </div>
+        </section>
+    
+        <!-- Pemutar Musik -->
+        <div class="audio-player">
+            <div class="song-info">
+                <span class="song-title">Mengejar Mimpi</span>
+                <span class="song-artist">- Bernadya</span>
+            </div>
+            <audio id="background-music" src="song/Bernadya.mp3" autoplay loop></audio>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Copyright By <span class="highlight">BarelangFC-Polibatam</span>. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
